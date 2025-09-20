@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro HTML</title>
+</head>
+<body>
+    <nav id="topo">
+        <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a> |
+        <a href="#midias">Midias</a> | <a href="#tabelas">Tabelas</a>
+    </nav>
+    <section id="formatacao">
+        <header>
+            <h1>Formatação em HTML</h1>
+        </header>
+
+        <h1>Titulo 1</h1>
+        <p>
+            Lorem, &nbsp; ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus dolorum mollitia. Pariatur ipsum dignissimos rem laudantium eaque. Quas accusamus tempore quis ipsam animi dolorum debitis possimus perspiciatis officiis corrupti!    
+        </p>
+        <p>Segundo parágrafo.</p>
+        <p><b>Texto em negrito.</b></p>
+        <p><strong>Texto em negrito</strong></p>
+        <p><i>Texto em Itálico</i></p>
+        <p><strike>Texto Tachado.</strike></p>
+        <p><u>Texto sublinhado.</u></p>
+        <p><ins>Texto inserido.</ins></p>
+        <p><em>Texto Itálico.</em></p>
+        <p><mark>Texto Marcado.</mark></p>
+    </section>
+    <section id="listas">
+        <header><h2>Listas Ordenadas e não ordenadas</h2></header>
+        <section id="lista-ordenada">
+            <header>Listas Ordenadas</header>
+            <!-- type 1 - numeros de 1 a n -->
+            <!-- type A - letras de A a Z -->
+            <!-- type I - Algarismos romanos -->
+            <ol type="I"> 
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+            </ol>
+            <h3>Iniciando a lista com um valor específico...</h3>
+            <ol start="5" type="1">
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ol>
+        </section>
+        <section id="lista-nao-ordenada">
+            <header><h4>Lista não ordenada</h4></header>
+            <ul>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item
+                    <ul>
+                        <li>Dentro do item - item 1</li>
+                        <li>Dentro do item - item 2</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#formatacao">Ir para o Topo</a>
+        </section>
+    </section>
+    <section id="midias">
+        <header><h4>Imagens</h4></header>
+        <figure>
+            <img src="https://sp.senai.br/images/senai.svg" 
+                alt="Logotipo do Senai">
+            <figcaption>Imagem do Senai - Fonte: Site do Senai</figcaption>
+        </figure>
+        <section id="videos">
+            <header><h4>Videos</h4></header>
+            <video controls>
+                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
+            </video>
+        </section>
+        <section id="audios">
+            <header><h4>Audios</h4></header>
+            <audio controls>
+                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
+            </audio>
+        </section>
+    </section>
+    <section id="tabelas">
+        <header><h4>Tabelas</h4></header>
+        <table border="1">
+            <thead>
+                <tr> <!-- Inicio de uma linha -->
+                    <th>Sequência</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody> <!-- corpo da tabela -->
+                <tr>
+                    <td>1</td>
+                    <td>Lapiseira</td>
+                    <td>R$ 15,00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Caneta</td>
+                    <td>R$ 10,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>R$ 25,00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section id="formularios">
+        <header><h4>Formulários</h4></header>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
