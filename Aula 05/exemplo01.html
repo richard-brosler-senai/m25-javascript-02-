@@ -4,6 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+            background-color: aqua;
+        }
+        /* Selecionando a tag com id = videos e dentro a tag video*/
+        #videos video{
+            width: 300px;
+        }
+        /* Selecionando por classe */
+        .cor-vermelha {
+            color: red;
+        }
+    </style>
     <title>Meu primeiro HTML</title>
 </head>
 
@@ -71,7 +84,7 @@
     </section>
     <section id="midias">
         <header>
-            <h4>Imagens</h4>
+            <h4 class="cor-vermelha">Imagens</h4>
         </header>
         <figure>
             <img src="https://sp.senai.br/images/senai.svg" alt="Logotipo do Senai">
@@ -169,6 +182,14 @@
             print(i)
         </pre>
     </section>
+    <aside>
+        <h3>Conteudo a parte</h3>
+    </aside>
+    <footer>
+        Linkedin: <a href="link para o linkedin">Texto a exibir Linkedin</a> 
+        | Facebook: <a href="link para o facebook">Texto a exibir Face</a> 
+        | WhatsApp: 14 123456
+    </footer>
     <!-- Javascript sempre ficará no final do documento -->
     <script>
         alert("Olá pessoal!");
