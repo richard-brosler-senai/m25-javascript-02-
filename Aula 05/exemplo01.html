@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro HTML</title>
 </head>
+
 <body>
     <nav id="topo">
         <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a> |
@@ -17,7 +19,9 @@
 
         <h1>Titulo 1</h1>
         <p>
-            Lorem, &nbsp; ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus dolorum mollitia. Pariatur ipsum dignissimos rem laudantium eaque. Quas accusamus tempore quis ipsam animi dolorum debitis possimus perspiciatis officiis corrupti!    
+            Lorem, &nbsp; ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus dolorum mollitia. Pariatur
+            ipsum dignissimos rem laudantium eaque. Quas accusamus tempore quis ipsam animi dolorum debitis possimus
+            perspiciatis officiis corrupti!
         </p>
         <p>Segundo parágrafo.</p>
         <p><b>Texto em negrito.</b></p>
@@ -30,13 +34,15 @@
         <p><mark>Texto Marcado.</mark></p>
     </section>
     <section id="listas">
-        <header><h2>Listas Ordenadas e não ordenadas</h2></header>
+        <header>
+            <h2>Listas Ordenadas e não ordenadas</h2>
+        </header>
         <section id="lista-ordenada">
             <header>Listas Ordenadas</header>
             <!-- type 1 - numeros de 1 a n -->
             <!-- type A - letras de A a Z -->
             <!-- type I - Algarismos romanos -->
-            <ol type="I"> 
+            <ol type="I">
                 <li>Primeiro item</li>
                 <li>Segundo item</li>
             </ol>
@@ -47,7 +53,9 @@
             </ol>
         </section>
         <section id="lista-nao-ordenada">
-            <header><h4>Lista não ordenada</h4></header>
+            <header>
+                <h4>Lista não ordenada</h4>
+            </header>
             <ul>
                 <li>Primeiro Item</li>
                 <li>Segundo Item</li>
@@ -62,27 +70,36 @@
         </section>
     </section>
     <section id="midias">
-        <header><h4>Imagens</h4></header>
+        <header>
+            <h4>Imagens</h4>
+        </header>
         <figure>
-            <img src="https://sp.senai.br/images/senai.svg" 
-                alt="Logotipo do Senai">
+            <img src="https://sp.senai.br/images/senai.svg" alt="Logotipo do Senai">
             <figcaption>Imagem do Senai - Fonte: Site do Senai</figcaption>
         </figure>
         <section id="videos">
-            <header><h4>Videos</h4></header>
+            <header>
+                <h4>Videos</h4>
+            </header>
             <video controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
+                <source
+                    src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
             </video>
         </section>
         <section id="audios">
-            <header><h4>Audios</h4></header>
+            <header>
+                <h4>Audios</h4>
+            </header>
             <audio controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
+                <source
+                    src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
             </audio>
         </section>
     </section>
     <section id="tabelas">
-        <header><h4>Tabelas</h4></header>
+        <header>
+            <h4>Tabelas</h4>
+        </header>
         <table border="1">
             <thead>
                 <tr> <!-- Inicio de uma linha -->
@@ -112,7 +129,9 @@
         </table>
     </section>
     <section id="formularios">
-        <header><h4>Formulários</h4></header>
+        <header>
+            <h4>Formulários</h4>
+        </header>
         <form action="#" method="post">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome">
@@ -123,5 +142,37 @@
             <input type="submit" value="Enviar">
         </form>
     </section>
+    <section id="iframes">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lfgxxw04Poo?si=l6Nvsigin3qLiCVO"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="desenho">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red" />
+        </svg>
+    </section>
+    <section id="outras-tags">
+        <progress value="70" max="100"></progress>
+        <meter value="0.6">60%</meter>
+        <time datetime="2025-09-20">20 de Setembro de 2025</time>
+        <!-- Usada para mostrar um código em uma programação -->
+        <code>
+            //teste de comentário
+            console.log("Olá");
+        </code>
+        <!-- Usado para mostrar um texto da forma que estiver escrito
+         com quebras de linhas, espaços, tabulações -->
+        <pre>
+            for i in range(5):
+            print(i)
+        </pre>
+    </section>
+    <!-- Javascript sempre ficará no final do documento -->
+    <script>
+        alert("Olá pessoal!");
+    </script>
 </body>
+
 </html>
