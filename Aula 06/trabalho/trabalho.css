@@ -1,1 +1,59 @@
 /* Inicio do CSS */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    text-align: justify;
+    padding: 0 10px; /* topo-base esquerda-direita */ 
+}
+section > h2 {
+    padding-left: 10px;
+    color: blue;
+}
+h2 + h4 { /* irmão direto */
+    color: green;
+    padding-left: 10px;
+}
+h2 ~ p {
+    margin-left: 5px;
+    background-color: bisque;
+}
+h2 + p {
+    margin-left: 10px;
+    background-color: aqua;
+}
+.menu {
+    display: flex;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    float: left;
+}
+.menu ul li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: beige;
+    font-weight: bold;
+}
+.menu ul li:first-child a {
+    background-color: aquamarine;    
+}
+.menu ul li:last-child a {
+    background-color: pink;    
+}
+
+/*Seletor de pseudo class - hover*/
+.menu ul li a:hover {
+    background-color: burlywood;
+}
+/*Usando seletor de id*/
+#referencias p {
+    padding-top: 10px;
+}
