@@ -12,3 +12,13 @@ function fatorial(numero){
 }
 //usando a função
 console.log("O fatorial de 5 é " + fatorial(5));
+//Arrow Function
+const fatorial_arrow = (numero) => {
+    let ret = 1;
+    for (let i=numero;i>1;i--){
+        ret *= i
+    }
+    return ret;
+}
+//usando a função
+console.log("O fatorial (arrow) de 5 é "+fatorial_arrow(5));
