@@ -43,7 +43,7 @@ form.addEventListener('submit', function (e) {
     //chamando a gravação do registro
     gravar();
     //voltando para a página inicial
-    // setTimeout(() => {
-    //     window.location.href = "index.html";
-    // }, 3000);
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 3000);
 })

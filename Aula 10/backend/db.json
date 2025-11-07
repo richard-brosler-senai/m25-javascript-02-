@@ -1,13 +1,13 @@
 {
   "produtos": [
     {
-      "id": 1,
+      "id": "1",
       "descricao": "teste",
       "saldo": "1",
       "preco": "0.01"
     },
     {
-      "id": 2,
+      "id": "2",
       "descricao": "aaa",
       "saldo": "2",
       "preco": "0.02"
