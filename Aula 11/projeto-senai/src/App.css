@@ -1,0 +1,5 @@
+.fundo {
+  background: url('./assets/logo-senai.png') no-repeat center;
+  opacity: 0.5;
+  height: 60vh;
+}

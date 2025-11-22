@@ -1,0 +1,21 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--cor-fundo-header);
+    color: var(--cor-fonte-header);
+    font-size: 40px;
+    height: 65px;
+}
+.cabecalho img {
+    height: 1em;
+}
+.icon-hamburger {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-color: var(--cor-fonte-header);
+    -webkit-mask: url('./assets/menu.svg') no-repeat center / contain;
+    mask: url('./assets/menu.svg') no-repeat cebter / contain;
+    margin: 5px;
+}
